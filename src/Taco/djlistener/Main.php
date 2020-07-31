@@ -21,6 +21,10 @@ use CortexPE\DiscordWebhookAPI\Embed;
 
 class Main extends PluginBase implements Listener {
     
+    public function onEnable() {
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
+    
     public function onJoin(PlayerJoinEvent $event) {
         $player = $event->getPlayer();
         $webHook = new Webhook($this->getConfig()->get("WebhookURL"));
