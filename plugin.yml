@@ -1,0 +1,7 @@
+name: djlistener
+main: Taco\djlistener\Main
+version: 1.0.0
+api: "3.0.0"
+author: Taco
+website: https://github.com/TWRRR
+description: Send A Join And Leave Message In Your Discord
